@@ -1,0 +1,26 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+\documentclass[espanol]{cv-style}
+\sethyphenation[variant=british]{english}{}
+
+\usepackage{graphicx}
+\usepackage{fontawesome}
+\usepackage{import}
+
+\newcommand*{\sectiondir}{contents/}
+\newcommand*{\picturedir}{pictures/}
+
+\begin{document}
+\header{ShengGe}{Ding}{Beauty is the ultimate defence against complexity.}
+\lastupdated
+\begin{sidebar}
+\import{\sectiondir}{sidebar.tex}
+\end{sidebar}
+\hfill
+\begin{mainframe}
+\import{\sectiondir}{summary.tex}
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{interest.tex}
+\end{mainframe}
+\end{document}
