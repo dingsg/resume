@@ -7,7 +7,9 @@ Derived from 3 Latex CV template.
 
 ## Requirement
 
-All fonts and classes are packaged. Need to fully install MacTex on MacOS.
+* All fonts and classes are packaged.
+* Manually install the FontAwesome font.
+* Need to fully install MacTex on MacOS.
 
 ## Build
 
