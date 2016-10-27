@@ -14,4 +14,3 @@ Derived from 3 Latex CV template.
 ## Build
 
    make
-
