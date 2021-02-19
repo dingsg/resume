@@ -133,6 +133,24 @@
   \let\section\oldsection
 }
 
+\newenvironment{subframe}{
+  \let\oldsection\section
+  \renewcommand{\section}[1]{
+    {\par\bigskip
+      {
+        \LARGE\headingfont\color{lightgray}%
+        \@sectioncolor ##1
+      }
+      \color{awesome}\vhrulefill{0.9pt}
+      \par\nobreak\addvspace{1ex}
+      \par\medskip}
+  }
+  \begin{flushleft}
+}{
+  \end{flushleft}
+  \let\section\oldsection
+}
+
 %% polyglossia, textpos
 \newenvironment{sidebar}{
   \let\oldsection\section
